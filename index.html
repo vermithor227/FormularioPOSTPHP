@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripcion</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario de Inscripcion</h1>
+
+        <from action="procesar.php" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre...">
+
+            <label for="correo">Correo</label>
+            <input type="text" id="correo" name="correo" placeholder="Escribe tu Correo...">
+
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad" placeholder="Escribe tu Edad...">
+
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" placeholder="Escribe tu Curso de Inscripcion...">
+
+            <label for="modalidad">Modalidad</label>
+            <select id="modalidad" name="modalidad">
+                <option value="">-- Seleciona --</option>
+                <option value="precensial">Presencial</option>
+                <option value="virtual">Virtual</option>
+                <option value="mixta">Mixta</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+
+        </from>
+    </div>
+</body>
+</html>
